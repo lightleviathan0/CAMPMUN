@@ -1,29 +1,20 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
     <title>CampMUN 2024</title>
-
     <link rel="icon" href="assets/images/favicon.png" type="image/png">
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
-
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-
     
     <style>
       .floating-image {
@@ -38,63 +29,77 @@
           transform: translateY(-40px);
         }
       }
+      .map-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* Aspect ratio: 16:9 (9 divided by 16 = 0.5625 or 56.25%) */
+      }
+      .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+
+      @media screen and (max-aspect-ratio: 16/9) {
+  h6 {
+    margin-top: 20px;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .main-button-gradient {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+  h6 {
+    margin-top: 40px;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+  .main-button-gradient {
+    margin-top: 80px;
+  }
+}
+
+
+    }
+
     </style>
-    
-  </head>
 
-<body>
-
-  <!-- ***** Header Area ***** -->
-  <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo ***** -->
-                      <a href="index.html" class="logo">
-                            <img src="assets/images/templatemo-eduwell.png" alt="EduWell Template" width="158" height="50">
-
-                      <!-- ***** Menu ***** -->
-                      <ul class="nav">
-                          <li><a href="index.html">Home</a></li> 
-                          <li><a href="about-us.html">About Us</a></li>
-                          <li><a href="our-services.html">Sign Up</a></li>
-                          <li class="has-sub">
-                              <a href="javascript:void(0)">Committees</a>
-                              <ul class="sub-menu">
-                                  <li><a href="ga.html">GA</a></li>
-                                  <li><a href="spec.html">Specialized</a></li>
-                                  <li><a href="crisis.html">Crisis</a></li>
-                              </ul>
-                          </li>
-                      </ul>        
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-
-                    </nav>
-              </div>
-          </div>
-      </div>
-  </header>
-
-  <!-- ***** Main Banner Area ***** -->
-  <section class="main-banner" id="top">
+@@ -130,14 +98,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center">
-          <div class="header-text">
-            <h6 style="margin-top: 100px;">July 15th-19th 2024</h6>
-            <h2 style="margin-top: 20px;">Camp Model <em>United Nations</em></h2>
-            <p style="margin-bottom: 30px;">
-                Welcome to CampMUN, your gateway to immersive diplomacy, leadership training, and global engagement. Dive into debates, negotiations, and cultural exchange.
+          <h6 style="margin-top: 30px;">July 15th-19th 2024</h6>
+          <h2 style="margin-top: 20px;">Camp Model <em>United Nations</em></h2>
+          <p style="margin-bottom: 30px;">
+            Welcome to CampMUN, your gateway to immersive diplomacy, leadership training, and global engagement. Dive into debates, negotiations, and cultural exchange.
+          </p>
+          <div class="main-button-gradient" style="margin-top: 50px;">
+            <li><a href="our-services.html">Sign Up</a></li> 
+          </div>              
+          <div class="header-text" style="margin-top: -100px;">
+            <h6>July 15th-19th 2024</h6>
+            <h2 style="margin-top: 5px;">Camp Model <em>United Nations</em></h2> <!-- Decreased margin-top -->
+            <p style="margin-bottom: 10px;"> <!-- Decreased margin-bottom -->
+              Welcome to CampMUN, your gateway to immersive diplomacy, leadership training, and global engagement. 
+              Dive into debates, negotiations, and cultural exchange.
             </p>
-            <div class="main-button-gradient" style="margin-top: 20px;">
-                <li><a href="our-services.html">Sign Up</a></li>
+            <div class="main-button-gradient" style="margin-top: 30px;">
+              <li><a href="our-services.html">Sign Up</a></li> 
             </div>
-        </div>        
-        </div>
-            
+          </div>        
         </div>                     
         <div class="col-lg-6">
           <div class="right-image">
@@ -104,9 +109,7 @@
       </div>
     </div>
   </section>
-
   <!-- ***** Main Banner Area End ***** -->
-
   <section class="our-courses" id="courses">
     <div class="container">
       <div class="row">
@@ -196,7 +199,6 @@
       </div>
     </div>
   </section>
-
   <section class="simple-cta">
     <div class="container">
       <div class="row">
@@ -220,7 +222,6 @@
       </div>
     </div>
   </section>
-
   <section class="testimonials" id="testimonials">
     <div class="container">
       <div class="row">
@@ -232,7 +233,6 @@
         </div>
         <div class="col-lg-12">
           <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-
             <div class="item">
               <p>
                 CAMPMUN was nothing short of a successful week filled with fun activities and spirited debate.
@@ -243,7 +243,6 @@
                 <span>Middle School Model UN Leader</span>
                 <img src="assets/images/quote.png" alt="">
             </div>
-
             <div class="item">
               <p>
                 CAMPMUN was an incredible experience that helped me develop as a speaker, collaborator, and leader.
@@ -253,7 +252,6 @@
                 <span>High School MUN Participant</span>
                 <img src="assets/images/quote.png" alt="">
             </div>
-
             <div class="item">
               <p>
                 CampMUN was a great experience which helped me strengthen my own MUN skills as well as strengthen the bonds with my peers.
@@ -263,7 +261,6 @@
                 <span>Middle School MUN Participant</span>
                 <img src="assets/images/quote.png" alt="">
             </div>
-
             <div class="item">
               <p>
                 CAMPMUN was a transformative experience that will propel any hopeful delegate’s MUN career. 
@@ -276,7 +273,6 @@
                 <span>Middle School Model UN Leader</span>
                 <img src="assets/images/quote.png" alt="">
             </div>
-
             <div class="item">
               <p>
                 CAMPMUN was a wonderful learning experience that included numerous speaking activities, a practice committee, and a final conference that remains one of my favorite MUN committees of all time.
@@ -287,7 +283,6 @@
                 <span>High School MUN Participant</span>
                 <img src="assets/images/quote.png" alt="">
             </div>
-
             <div class="item">
               <p>
                 With its great staff, friendly attendees, and interesting committees, CampMUN was an absolute joy to attend.
@@ -302,7 +297,6 @@
       </div>
     </div>
   </section>
-
   <section class="contact-us" id="contact-section">
     <div class="container">
       <div class="row">
@@ -310,8 +304,10 @@
           <div id="map">
           
             <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.410409074151!2d-77.1695575245983!3d38.82306075108779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b3658935f8df%3A0x1eb0a84a5b4c11cb!2sKorean%20Community%20Center!5e0!3m2!1sen!2sus!4v1711306161185!5m2!1sen!2sus" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="row">
-              <div class="col-lg-4 offset-lg-1">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.410409074151!2d-77.1695575245983!3d38.82306075108779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b3658935f8df%3A0x1eb0a84a5b4c11cb!2sKorean%20Community%20Center!5e0!3m2!1sen!2sus!4v1711306161185!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-4 offset-lg-1">
                 <div class="contact-info">
                   <div class="icon">
                     <i class="fa fa-phone"></i>
@@ -356,12 +352,10 @@
       </div>
     </div>
   </section>
-
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
@@ -372,13 +366,11 @@
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
-
         var showSection = function showSection(section, isAnimate) {
           var
           direction = section.replace(/#/, ''),
           reqSection = $('.section').filter('[data-section="' + direction + '"]'),
           reqSectionPos = reqSection.offset().top - 0;
-
           if (isAnimate) {
             $('body, html').animate({
               scrollTop: reqSectionPos },
@@ -386,9 +378,7 @@
           } else {
             $('body, html').scrollTop(reqSectionPos);
           }
-
         };
-
         var checkSection = function checkSection() {
           $('.section').each(function () {
             var
@@ -405,16 +395,13 @@
             }
           });
         };
-
         $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
           e.preventDefault();
           showSection($(this).attr('href'), true);
         });
-
         $(window).scroll(function () {
           checkSection();
         });
     </script>
 </body>
-
 </html>
