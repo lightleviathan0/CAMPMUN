@@ -26,6 +26,20 @@
 -->
   </head>
 
+  <style>
+    .image-container {
+        max-width: 100%; /* Set maximum width to adjust based on parent container */
+        max-height: 100%; /* Set maximum height to adjust based on parent container */
+        overflow: hidden; /* Hide overflow content */
+        position: relative; /* Needed for absolute positioning of the image */
+    }
+    .image-container img {
+        width: 100%; /* Set width to fill its container */
+        height: auto; /* Automatically adjust height to maintain aspect ratio */
+        display: block; /* Remove extra space under image */
+    }
+  </style>
+
 <body>
 
 
@@ -135,7 +149,7 @@
   <section class="contact-us">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="image-container">
           <img src="assets/images/unitednations.png" alt="United Nations" width="900" height="550" style="border-radius: 15px;">
           <div class="row">
               <div class="col-lg-4 offset-lg-1">
